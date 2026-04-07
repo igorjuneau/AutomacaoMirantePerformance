@@ -1,5 +1,12 @@
 # 🚀 Projeto de Automação de Performance - BlazeDemo
 
+> [!IMPORTANT]
+> ### ⚠️ AVISO DE PROPRIEDADE E ÉTICA PROFISSIONAL
+> Este repositório é público exclusivamente para fins de **portfólio e avaliação**. 
+> A cópia total ou parcial deste código para uso em desafios ou processos seletivos é **estritamente proibida**. 
+> O histórico de commits e originalidade é monitorado. Use este material apenas como referência de estudo.
+
+---
 Este repositório contém a automação de testes de performance para o fluxo de compra de passagens 
 do site [BlazeDemo](https://www.blazedemo.com). O objetivo é validar a resiliência e o tempo de 
 resposta da aplicação sob carga moderada.
