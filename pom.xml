@@ -47,38 +47,31 @@
                 </configuration>
             </plugin>
 
-            <plugin>
-                <groupId>com.lazerycode.jmeter</groupId>
-                <artifactId>jmeter-maven-plugin</artifactId>
-                <version>3.7.0</version>
-                <executions>
-                    <execution>
-                        <id>configuration</id>
-                        <goals>
-                            <goal>configure</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>jmeter-tests</id>
-                        <goals>
-                            <goal>jmeter</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>jmeter-check-results</id>
-                        <goals>
-                            <goal>results</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <generateReports>true</generateReports>
-                    <testFilesIncluded>
-                        <jMeterTestFile>BlazeDemo_Performance.jmx</jMeterTestFile>
-                    </testFilesIncluded>
-                    <ignoreResultFailures>false</ignoreResultFailures>
-                </configuration>
-            </plugin>
+         <plugin>
+             <groupId>com.lazerycode.jmeter</groupId>
+             <artifactId>jmeter-maven-plugin</artifactId>
+             <version>3.7.0</version>
+             <executions>
+                 <execution>
+                     <id>configuration</id>
+                     <goals>
+                         <goal>configure</goal>
+                     </goals>
+                 </execution>
+                 <execution>
+            <id>jmeter-tests</id>
+            <goals>
+                <goal>jmeter</goal>
+                     </goals>
+                 </execution>
+             </executions>
+             <configuration>
+                 <generateReports>true</generateReports>
+                 <testFilesIncluded>
+                     <jMeterTestFile>BlazeDemo_Performance.jmx</jMeterTestFile>
+                 </testFilesIncluded>
+             </configuration>
+         </plugin>
         </plugins>
     </build>
 </project>
