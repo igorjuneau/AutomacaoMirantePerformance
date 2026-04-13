@@ -22,7 +22,7 @@ jobs:
           cache: maven
 
       - name: Run JMeter Performance Tests
-        run: mvn clean jmeter:jmeter
+        run: mvn clean verify
 
       - name: Upload JMeter Report
         uses: actions/upload-artifact@v4
