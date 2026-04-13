@@ -54,16 +54,20 @@
                 <executions>
                     <execution>
                         <id>configuration</id>
-                        <phase>pre-integration-test</phase>
                         <goals>
                             <goal>configure</goal>
                         </goals>
                     </execution>
                     <execution>
                         <id>jmeter-tests</id>
-                        <phase>integration-test</phase>
                         <goals>
                             <goal>jmeter</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>jmeter-check-results</id>
+                        <goals>
+                            <goal>results</goal>
                         </goals>
                     </execution>
                 </executions>
@@ -72,6 +76,7 @@
                     <testFilesIncluded>
                         <jMeterTestFile>BlazeDemo_Performance.jmx</jMeterTestFile>
                     </testFilesIncluded>
+                    <ignoreResultFailures>false</ignoreResultFailures>
                 </configuration>
             </plugin>
         </plugins>
